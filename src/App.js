@@ -25,7 +25,7 @@ function App() {
 
     SetFinalSilver((Silver - Repair) / Players);
   }
-
+  
   return (
     <div className='div'>
       <form onSubmit={handleSubmit}>

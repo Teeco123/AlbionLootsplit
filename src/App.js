@@ -24,6 +24,7 @@ function App() {
     event.preventDefault();
 
     SetFinalSilver((Silver - Repair) / Players);
+    SetFinalSilverLeader((Number(Repair) + ((Silver - Repair) / Players)));
   }
   
   return (

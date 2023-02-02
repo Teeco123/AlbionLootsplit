@@ -7,17 +7,18 @@ function App() {
   const [Players, SetPlayers] = useState(1);
   const [Repair, SetRepair] = useState(0);
   const [FinalSilver, SetFinalSilver] = useState(0);
+  const [FinalSilverLeader, SetFinalSilverLeader] = useState(0);
 
   const handleSilver = (event) => {
     SetSilver(event.target.value);
   }
 
   const handlePlayers = (event) => {
-    SetPlayers(event.target.value)
+    SetPlayers(event.target.value);
   }
 
   const handleRepair = (event) => {
-    SetRepair(event.target.value)
+    SetRepair(event.target.value);
   }
 
   const handleSubmit = (event) => {
@@ -53,7 +54,10 @@ function App() {
           type="submit" 
           value="Calculate" />
       </form>
-      <p>{FinalSilver}</p>
+      <div className='result'>
+        Silver for players: {FinalSilver} <br/>
+        Silver for leader: {FinalSilverLeader}
+      </div>
     </div>
   );
 }

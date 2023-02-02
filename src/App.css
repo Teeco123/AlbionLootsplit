@@ -1,25 +1,39 @@
 body{
     background-color: rgb(63, 63, 63);
+    font-family: 'Roboto';
 }
 
 .div{
     margin: auto;
     width: 50%;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
 }
 
 input[type=number]{
    margin-top: 10px;
    border-radius: 7px;
-   border: 1px solid black;
+   border: 2px solid black;
    background-color: rgb(63, 63, 63);
-   color:rgb(212, 212, 212);
+   color:rgb(187, 187, 187);
    text-align: center;
 }
 
 input[type=submit]{
+    margin-top: 20px;
     width: 175px;
     text-align: center;
     background-color: grey;
+    color:rgb(187, 187, 187);
+    border: 2px solid black;
     border-radius: 7px;
+}
+
+.result{
+    color:rgb(187, 187, 187);
+    margin-top: 15px;
+    font-size: 18px;
 }
